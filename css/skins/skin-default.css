@@ -276,9 +276,17 @@ blockquote::before,
 .button.yellow,
 .service .sidebar ul li a:hover,
 .service .sidebar ul li a.active {
-  border-color: #0016b9;
+  border-color: #fcbe1b;
 }
 
 .testimonial {
   box-shadow: 8px 4px 0 0 #0016b9;
+}
+
+/* Target any FontAwesome icon inside the topbar containers */
+.topbar i,
+.footer i,
+.topbar-left li i,
+.topbar-right li i {
+    color: #fcbe1b !important;
 }

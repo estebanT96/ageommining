@@ -536,7 +536,7 @@
     display: block !important;
     opacity: 0;
     visibility: hidden;
-    border-top: 5px solid #0016b9;
+    border-top: 5px solid #fcbe1b;
     box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.05);
     border-bottom: 0px;
   }

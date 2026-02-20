@@ -2518,3 +2518,8 @@ v@-moz-keyframes fadebounce {
     transform: scale(1);
   }
 }
+
+.menu-links a:hover, 
+.drop-down-multilevel li a:hover {
+    color: #fcbe1b !important;
+}
