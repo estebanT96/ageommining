@@ -695,7 +695,7 @@ button:focus{outline:0;}
 .button.transparent.middle-fill:after{background-color:#ffffff;}
 
 .button.transparent.left-fill:hover,
-.button.transparent.middle-fill:hover{color:#ffffff;}
+.button.transparent.middle-fill:hover{color:#323232;}
 
 /* Buttons Size */
 .button.small{padding:10px 25px;}

@@ -202,7 +202,7 @@
 .mega-menu .menu-links > li:hover {
   /*-------------------------------------- HOVER MENU LINKS */
   background-color: transparent;
-  color: #0016b9;
+  color: #fcbe1b;
 }
 .mega-menu .menu-links > li > a {
   margin: 0;
@@ -217,7 +217,7 @@
   text-transform: capitalize;
 }
 .mega-menu .menu-links > li > a:hover {
-  color: #0016b9;
+  color: #fcbe1b;
 }
 @media screen and (max-width: 991px) {
   .mega-menu .menu-links > li > a {
@@ -601,7 +601,7 @@
   color: #323232;
 }
 .mega-menu .menu-links > li.active .drop-down-multilevel a:hover {
-  color: #0016b9;
+  color: #fcbe1b;
 }
 .mega-menu .drop-down-multilevel a {
   margin: 0;
