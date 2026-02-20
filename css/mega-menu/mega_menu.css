@@ -191,18 +191,18 @@
 }
 @media screen and (min-width: 992px) {
   .mega-menu .menu-links > li.activeTrigger {
-    background-color: #229fff;
+    background-color: #0016b9;
   }
 }
 .mega-menu .menu-links > li.active a {
   /*------------------------------------- ACTIVE CLASS MENU LINKS */
   background-color: transparent;
-  color: #229fff;
+  color: #0016b9;
 }
 .mega-menu .menu-links > li:hover {
   /*-------------------------------------- HOVER MENU LINKS */
   background-color: transparent;
-  color: #229fff;
+  color: #0016b9;
 }
 .mega-menu .menu-links > li > a {
   margin: 0;
@@ -217,7 +217,7 @@
   text-transform: capitalize;
 }
 .mega-menu .menu-links > li > a:hover {
-  color: #229fff;
+  color: #0016b9;
 }
 @media screen and (max-width: 991px) {
   .mega-menu .menu-links > li > a {
@@ -363,7 +363,7 @@
   line-height: 50px;
 }
 .mega-menu .menu-search-bar li:hover i.fa.fa-search {
-  background: #229fff;
+  background: #0016b9;
 }
 .mega-menu .menu-search-bar input {
   max-width: 0;
@@ -387,7 +387,7 @@
 }
 .mega-menu .menu-search-bar input:focus {
   max-width: 170px;
-  background: #229fff;
+  background: #0016b9;
   padding-left: 20px;
 }
 @media screen and (max-width: 991px) {
@@ -536,7 +536,7 @@
     display: block !important;
     opacity: 0;
     visibility: hidden;
-    border-top: 5px solid #229fff;
+    border-top: 5px solid #0016b9;
     box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.05);
     border-bottom: 0px;
   }
@@ -570,14 +570,14 @@
   background: none;
 }
 .mega-menu .drop-down-multilevel li:hover > a {
-  color: #229fff;
+  color: #0016b9;
 }
 .mega-menu .drop-down-multilevel li:hover > a i.fa {
-  color: #229fff;
+  color: #0016b9;
 }
 @media screen and (min-width: 992px) {
   .mega-menu .drop-down-multilevel li.activeTrigger {
-    background: #229fff;
+    background: #0016b9;
   }
   .mega-menu .drop-down-multilevel li.activeTrigger > a {
     color: #ffffff;
@@ -588,7 +588,7 @@
 }
 @media screen and (max-width: 991px) {
   .mega-menu .drop-down-multilevel li.activeTriggerMobile {
-    background: #229fff;
+    background: #0016b9;
   }
   .mega-menu .drop-down-multilevel li.activeTriggerMobile > a {
     color: #ffffff;
@@ -601,7 +601,7 @@
   color: #323232;
 }
 .mega-menu .menu-links > li.active .drop-down-multilevel a:hover {
-  color: #229fff;
+  color: #0016b9;
 }
 .mega-menu .drop-down-multilevel a {
   margin: 0;
@@ -730,7 +730,7 @@
     display: block !important;
     opacity: 0;
     visibility: hidden;
-    border-top: 5px solid #229fff;
+    border-top: 5px solid #0016b9;
     border-radius: 0px !important;
     background: rgba(21, 21, 21, 0.9);
     box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.05);
@@ -1261,7 +1261,7 @@
 .mega-menu .drop-down input[type="button"],
 .mega-menu .drop-down-tab-bar input[type="submit"],
 .mega-menu .drop-down-tab-bar input[type="button"] {
-  background: #229fff;
+  background: #0016b9;
   padding: 10px 20px;
   margin: 5px 10px 0 0;
   line-height: 1.5em;
@@ -1304,7 +1304,7 @@
 
 .mega-menu .drop-down a:hover,
 .mega-menu .drop-down-tab-bar a:hover {
-  color: #229fff;
+  color: #0016b9;
 }
 .mega-menu .drop-down a i,
 .mega-menu .drop-down-tab-bar a i {
@@ -1317,7 +1317,7 @@
 
 .mega-menu .drop-down a:hover i,
 .mega-menu .drop-down-tab-bar a:hover i {
-  color: #229fff;
+  color: #0016b9;
 }
 
 @media screen and (max-width: 991px) {
@@ -1987,7 +1987,7 @@
   .mega-menu.vertical-right .menu-search-bar label {
     width: 100%;
     max-width: 100%;
-    background: #229fff;
+    background: #0016b9;
     -webkit-transition: none;
     transition: none;
   }
