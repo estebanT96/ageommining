@@ -325,8 +325,8 @@ Page section margin padding
 .owl-carousel .owl-nav .owl-next{display: block; position: absolute; text-indent: inherit; width: auto; cursor: pointer; opacity:0; transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -ms-transition:all 0.2s ease-in-out;}
 .owl-carousel .owl-nav .owl-prev{left:0px;}
 .owl-carousel .owl-nav .owl-next{right:0px;}
-.owl-carousel .owl-nav i{font-size: 20px; width:35px; height:35px; line-height:35px; padding-left:2px; display: inline-block; color:#0016b9; background:#353535; border:0px solid #353535; font-weight:normal; text-align: center; -webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; transition:all 0.2s ease-in-out;}
-.owl-carousel .owl-nav i:hover{background:#0016b9; color:#353535;  }
+.owl-carousel .owl-nav i{font-size: 20px; width:35px; height:35px; line-height:35px; padding-left:2px; display: inline-block; color:white !important; background:#fcbe1b; border:0px solid #ffffff; font-weight:normal; text-align: center; -webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; transition:all 0.2s ease-in-out;}
+.owl-carousel .owl-nav i:hover{background:#f5d789 !important; color:white;  }
 
 .owl-carousel:hover .owl-nav .owl-prev,
 .owl-carousel:hover .owl-nav .owl-next{opacity:1;}
@@ -867,7 +867,7 @@ ul.list-edit li:after{content:"\f040";}
   Blog - Post
 ----------------------------------------------------------------------*/
 .post{position:relative; font-family: 'Roboto', sans-serif;}
-.post .post-date{font-size:27px; font-weight:600; color:#ffffff; background:#0016b9; display:inline-block; width:60px; height:85px; text-align:center; position:absolute; line-height:55px;}
+.post .post-date{font-size:27px; font-weight:600; color:#ffffff; background:#0016b9; display:inline-block; width:60px; height:60px; text-align:center; position:absolute; line-height:55px;}
 .post .post-date span{font-size:13px; font-weight:normal; color:#ffffff; background:#323232;  width:60px; height:32px; display:block; position:absolute; bottom:0; letter-spacing: 1px; line-height: 32px;}
 .post .post-details{padding-left:85px;}
 .post .post-details .title{font-weight:500; margin-top:20px; margin-bottom:10px;}
