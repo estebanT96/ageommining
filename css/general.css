@@ -115,7 +115,7 @@ blockquote .quote-author, blockquote .quote-author a{font-size:16px; font-weight
 /***************************
 Page section margin padding
 ****************************/
-.page-section-ptb{padding:80px 0;} .page-section-pt{padding: 80px 0 0;} .page-section-pb{padding: 0 0 80px;}
+.page-section-ptb{padding:20px 0;} .page-section-pt{padding: 80px 0 0;} .page-section-pb{padding: 0 0 80px;}
 
 .page-section-ptb2{padding:20px 0;} .page-section-pt2{padding:20px 0 0;} .page-section-pb2{padding:0 0 20px;}
 .page-section-ptb3{padding:30px 0;} .page-section-pt3{padding:30px 0 0;} .page-section-pb3{padding:0 0 30px;}
@@ -141,7 +141,7 @@ Page section margin padding
 .mt-20 { margin-top: 20px !important; }
 .mt-30 { margin-top: 30px !important; }
 .mt-40 { margin-top: 40px !important; }
-.mt-50 { margin-top: 50px !important; }
+.mt-50 { margin-top: 10px !important; }
 .mt-60 { margin-top: 60px !important; }
 .mt-70 { margin-top: 70px !important; }
 .mt-80 { margin-top: 80px !important; }
@@ -243,7 +243,7 @@ Page section margin padding
 /*************************
     Section title
 ***********************/
-.section-title{margin-bottom:30px;}
+.section-title{margin-bottom:15px;}
 .section-title span{font-weight:600; font-size:16px;  margin-top:30px; display:block; line-height:28px;}
 .section-title p{padding:0 100px; margin-top:25px; display:block; margin-bottom:50px;}
 .text-start .section-title p, .section-title.text-start p, .section-title p.text-start{padding:0; margin-bottom:20px;}
@@ -360,7 +360,7 @@ Page section margin padding
 /*---------------------------------------------------------------------
   Title Effect
 ----------------------------------------------------------------------*/
-.section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6{position:relative; padding-bottom:15px}
+.section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6{position:relative; padding-bottom:10px}
 
 .section-title h1.title:before, .section-title h2.title:before, .section-title h3.title:before, .section-title h4.title:before, .section-title h5.title:before, .section-title h6.title:before{content:""; position:absolute; left:0; bottom:0; width:50px; height:2px; background:#0016b9;}
 
@@ -835,7 +835,7 @@ button:focus{outline:0;}
 /*---------------------------------------------------------------------
   Listing
 ----------------------------------------------------------------------*/
-ul{padding:0; margin:0; padding-left:20px;}
+ul{padding:0; margin:0; }
 ul li{margin:5px 0; padding-left:5px;}
 ul li a, ul.list li a{color:#757575;}
 ul li:after{content:""; font-family: 'FontAwesome'; position:absolute; color:#0016b9; left:0; top:0;}
@@ -844,7 +844,7 @@ ul.list li a:hover{color:#0016b9;}
 ul.list li .fa{margin-right:5px;}
 
 /* Ul List Mark */
-ul.list-mark{padding:0; margin:0;}
+ul.list-mark{padding-left:90px; margin:0;}
 ul.list-mark li{list-style-type:none; padding-left:25px; position:relative;}
 ul.list-mark li:after{content:"\f00c";}
 
@@ -1123,7 +1123,7 @@ form .form-group .form-control:focus{border-color:#0016b9;}
 form .form-group .glyph-icon{position:absolute; left:10px; top:10px; z-index:10;}
 form .form-group .glyph-icon:before{font-weight:500; font-size:22px;}
 form .form-group .glyph-icon + .form-control, form .form-group .glyph-icon ~ textarea.form-control{padding-left:45px;}
-form .form-group button, form .form-group input[type="submit"]{background:none;}
+form .form-group button, form .form-group input[type="submit"]{background:#0016B9;}
 form .form-group textarea { resize: vertical; }
 textarea { height: auto !important; }
 
@@ -1597,9 +1597,25 @@ textarea { height: auto !important; }
 /*----------------------------------------------------------------------
   Testimonials
 -----------------------------------------------------------------------*/
-.testimonial {position: relative; background:#f9f9f9; padding:85px 50px 45px 70px; margin:0 8px 4px 0; margin-top:45px; font-family: 'Roboto', sans-serif; color:#656565; font-weight:400; line-height:24px; text-align:center; -webkit-box-shadow:8px 4px 0px 0px rgba(255, 192, 1, 1);-moz-box-shadow:8px 4px 0px 0px rgba(255, 192, 1, 1); box-shadow:8px 4px 0px 0px rgba(255, 192, 1, 1);}
-.testimonial-avatar{position: absolute; left: 50%; margin-left:-55px; top:-45px; width:110px; height:110px;}
-.testimonial-avatar img{border:4px solid #0016b9; max-width:100%;}
+.testimonial {position: relative; background:#f9f9f9; padding:85px 50px 45px 70px; margin:0 20px 4px 0; margin-top:45px; font-family: 'Roboto', sans-serif; color:#656565; font-weight:400; line-height:24px; text-align:center; -webkit-box-shadow:8px 4px 0px 0px rgba(255, 192, 1, 1);-moz-box-shadow:8px 4px 0px 0px rgba(255, 192, 1, 1); box-shadow:8px 4px 0px 0px rgba(255, 192, 1, 1);}
+.testimonial-avatar {
+    position: absolute; 
+    left: 50%; 
+    margin-left:-55px; 
+    top:-45px; 
+    width:110px; 
+    height:110px;
+    overflow: hidden;          
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial-avatar img{border:4px solid #0016b9; 
+    width: 100%;               
+    height: 100%;              
+    object-fit: cover;         
+    transform: scale(1.1);}
 
 .testimonial-info{position: relative;}
 .testimonial-info:before{position:absolute; top:-15px; left:-35px; color:#0016b9; font-family:'FontAwesome'; content:"\f10d "; font-size:32px;}
@@ -1634,7 +1650,7 @@ textarea { height: auto !important; }
 .testimonial.left_pos .author-info:before{margin-left:0; left:0;}
 
 /* Bottom Position */
-.testimonial.bottom_pos {padding:60px 40px 40px 60px; text-align: left; margin-top:0; margin-bottom:50px;}
+.testimonial.bottom_pos {padding:30px 40px 30px 60px; text-align: left; margin-top:0; margin-bottom:70px;}
 .testimonial.bottom_pos .testimonial-avatar {bottom: -50px; top: inherit; left: 0px; margin-left: 50px;}
 .testimonial.bottom_pos .author-info{ margin-left:125px;}
 .testimonial.bottom_pos .author-info:before{margin-left:0; left:0;}
@@ -1772,7 +1788,7 @@ textarea { height: auto !important; }
 
 @media screen and (max-width:1200px) {
 /* Page section margin padding */
-.page-section-ptb{padding:60px 0;} .page-section-pt{padding: 60px 0 0;} .page-section-pb{padding: 0 0 60px;}
+.page-section-ptb{padding:20px 0;} .page-section-pt{padding: 60px 0 0;} .page-section-pb{padding: 0 0 60px;}
 .social-icons li a{margin:0 5px 5px 0;}
 
 /*-------------------------------------------------

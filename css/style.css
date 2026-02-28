@@ -868,7 +868,7 @@ ul.page-breadcrumb li a:hover {
 .footer .title {
   position: relative;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 /*footer-flickr */
 ul.footer-instagram-images li {
@@ -1000,7 +1000,7 @@ ul.footer-instagram-images li {
 }
 
 .footer-widget {
-  padding: 30px 0;
+  padding: 10px 0;
   background: rgba(0, 0, 0, 0.3);
 }
 .footer-widget p {
@@ -2519,7 +2519,7 @@ v@-moz-keyframes fadebounce {
   }
 }
 
-.menu-links a:hover, 
+.menu-links a:hover,
 .drop-down-multilevel li a:hover {
-    color: #fcbe1b !important;
+  color: #fcbe1b !important;
 }
