@@ -648,7 +648,7 @@ button:focus{outline:0;}
     opacity:0;
 }
 .button.animated.middle-fill:hover:after{height:100%; top:0; opacity:1}
-.button.animated.middle-fill:after{background-color:#001eff;}
+.button.animated.middle-fill:after{background-color:#fce497;}
 .button.animated.middle-fill:hover{color:#fff;}
 
 /* 3D Button */
@@ -664,7 +664,7 @@ button:focus{outline:0;}
 .button.yellow-dark{background-color:#f59017; border-color:#f59017; color:#fff;}
 
 /* Border Button */
-.button.border{color:#ffffff; font-weight:600; border:2px solid #ffffff !important;}
+.button.border{color:#ffffff; font-weight:600; border:2px solid black !important;}
 .button.border.button-3d{-webkit-box-shadow:0 -3px rgba(255, 255, 255, 0.5) inset; -moz-box-shadow:0 -3px rgba(0, 0, 0, 0.5) inset; box-shadow:0 -3px rgba(0, 0, 0, 0.5) inset;}
 
 /* Color Buttons */
@@ -1124,6 +1124,11 @@ form .form-group .glyph-icon{position:absolute; left:10px; top:10px; z-index:10;
 form .form-group .glyph-icon:before{font-weight:500; font-size:22px;}
 form .form-group .glyph-icon + .form-control, form .form-group .glyph-icon ~ textarea.form-control{padding-left:45px;}
 form .form-group button, form .form-group input[type="submit"]{background:#0016B9;}
+form .form-group button:hover, 
+form .form-group input[type="submit"]:hover {
+    background-color: #1e35ff !important;
+    transition: background-color 0.3s ease; 
+}
 form .form-group textarea { resize: vertical; }
 textarea { height: auto !important; }
 

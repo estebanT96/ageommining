@@ -1,54 +1,51 @@
 <?php
-if(isset($_POST["action"])) {
-	$name = $_POST['name'];                 // Sender's name
-	$email = $_POST['email'];     // Sender's email address
-	$phone  = $_POST['phone'];     // Sender's email address
-	$website  = $_POST['website'];     // Sender's website
-	$message = $_POST['message'];    // Sender's message
-	$from = 'Demo Contact Form';    
-	$to = 'demo@domain.com';     // Recipient's email address
-	$subject = 'Message from Contact Demo ';
+if (isset($_POST["action"])) {
+  // 1. Capture and Clean Data
+  $name    = strip_tags(trim($_POST['name']));
+  $email   = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+  $phone   = strip_tags(trim($_POST['phone']));
+  $message = strip_tags(trim($_POST['message']));
+  
+  $to      = 'ageommining2@gmail.com'; 
+  $subject = 'Nuevo Mensaje de Contacto - Ageommining';
 
-	//$body = " From: $name \n E-Mail: $email \n Phone : $phone \n Message : $message"  ;
-	$body = "From: $name \n";   
-  	$body.= "E-Mail: $email \n";
-	$body.= "Phone : $phone \n";  
-	$body.= "Website : $website \n";  
-	$body.= "Message : $message \n";
-	
-	// init error message 
-	$errmsg='';
-	// Check if name has been entered
-	if (!$_POST['name']) {
-		$errmsg = 'Please enter your name';
-	}
+  // 2. Build the Email Body (Removed $website to avoid errors)
+  $body  = "Has recibido un nuevo mensaje:\n\n";
+  $body .= "Nombre: $name\n";
+  $body .= "E-Mail: $email\n";
+  $body .= "Teléfono: $phone\n";
+  $body .= "Mensaje: $message\n";
 
-	
-	/* Check required field not blank */
-	
-	// Check if email has been entered and is valid
-	if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-		$errmsg = 'Please enter a valid email address';
-	}	
+  // 3. Set Proper Headers
+  $headers  = "From: Web Contact <no-reply@ageommining.com>\r\n";
+  $headers .= "Reply-To: $email\r\n";
+  $headers .= "X-Mailer: PHP/" . phpversion();
 
-	//Check if message has been entered
-	if (!$_POST['message']) {
-		$errmsg = 'Please enter your message';
-	}
- 
-	$result='';
-	// If there are no errors, send the email
-	if (!$errmsg) {
-		if (mail ($to, $subject, $body, $from)) {
-			$result='<div class="alert alert-success">Thank you for contacting us. Your message has been successfully sent. We will contact you very soon!</div>'; 
-		} 
-		else {
-		  $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
-		}
-	}
-	else{
-		$result='<div class="alert alert-danger">'.$errmsg.'</div>';
-	}
-		echo $result;
-	}
+  // 4. Validation
+  $errmsg = '';
+  if (!$name) {
+    $errmsg = 'Por favor ingrese su nombre';
+  }
+  if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errmsg = 'Por favor ingrese un email válido';
+  }
+  if (!$message) {
+    $errmsg = 'Por favor ingrese su mensaje';
+  }
+
+  // 5. Send Process
+  $result = '';
+  if (!$errmsg) {
+    // CHANGED: Using $headers instead of $from
+    if (mail($to, $subject, $body, $headers)) {
+      $result = '<div class="alert alert-success">Gracias por contactarnos. ¡Mensaje enviado con éxito!</div>';
+    } else {
+      $result = '<div class="alert alert-danger">Error al enviar el mensaje. Inténtelo más tarde.</div>';
+    }
+  } else {
+    $result = '<div class="alert alert-danger">' . $errmsg . '</div>';
+  }
+  
+  echo $result;
+}
 ?>

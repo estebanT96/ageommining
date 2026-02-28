@@ -1161,7 +1161,7 @@ ul.footer-instagram-images li {
 }
 .address-block.fill .glyph-icon {
   background: #0016b9;
-  color: #323232;
+  color: #ffffff;
 }
 .address-block.rounded .glyph-icon {
   -webkit-border-radius: 50%;
@@ -1202,8 +1202,8 @@ ul.footer-instagram-images li {
   margin-left: 2%;
 }
 .top-info.fill .address-block .glyph-icon {
-  border-color: #353535;
-  color: #353535;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 .top-info.fill .address-block span,
 .top-info.fill .address-block a {
