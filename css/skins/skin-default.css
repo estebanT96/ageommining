@@ -228,7 +228,7 @@ ul.list li a:hover,
 .comment-list .comment-metadata .fa,
 .text-yellow,
 #header.clean .mega-menu .menu-links > li > a:hover {
-  color: #0016b9;
+  color: #fcbe1b;
 }
 
 /*************************
@@ -289,4 +289,9 @@ blockquote::before,
 .topbar-left li i,
 .topbar-right li i {
     color: #fcbe1b !important;
+}
+
+/* This filter turns a black SVG into a specific blue-ish hue */
+.blue-pin {
+    filter: invert(24%) sepia(91%) saturate(2151%) hue-rotate(190deg) brightness(95%) contrast(102%);
 }
