@@ -1647,10 +1647,159 @@ hr {
   margin: 0 -7px;
 }
 
+.home__container {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background: #000;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo_custom {
+  height: 70px;
+}
+
+.home_content_title {
+  display: block;
+  color: #fcbe1b;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.home_content_para {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 850px;
+  margin: 0 auto 40px auto;
+  opacity: 0.9;
+}
+
+.home_content_title_2 {
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: 900;
+  margin: 0 0 20px 0;
+  line-height: 1;
+}
+
+.home_proyectos_btn {
+  background: #fcbe1b;
+  color: black;
+  padding: 16px 45px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 2px solid #fcbe1b;
+  transition: all ease 200ms;
+}
+
+.home_proyectos_btn:hover {
+  filter: brightness(120%);
+  color: #222;
+}
+
+.learn_more_btn {
+  background: transparent;
+  color: #fff;
+  padding: 16px 45px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 2px solid #ffffff;
+  transition: all ease 200ms;
+}
+
+.learn_more_btn:hover {
+  background-color: white;
+  filter: brightness(120%);
+  color: black;
+}
+
+.contactanos_btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 30px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 2px solid #ffffff;
+  transition: all ease 200ms;
+}
+
+.contactanos_btn:hover {
+  background-color: white;
+  filter: brightness(120%);
+  color: black;
+}
+
+.tab__title__mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .popup-gallery.columns-3 .project-info,
   .popup-gallery.columns-4 .project-info {
     width: 33.3333%;
+  }
+
+  .logo_container {
+    margin-top: 20px;
+  }
+  .logo_custom {
+    height: 40px;
+  }
+  .home_proyectos_btn {
+    background: #fcbe1b;
+    color: black;
+    padding: 10px 30px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 2px solid #fcbe1b;
+    transition: all ease 200ms;
+  }
+
+  .learn_more_btn {
+    background: transparent;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 2px solid #ffffff;
+    transition: all ease 200ms;
+  }
+
+  .home_content_para {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+    opacity: 0.9;
+  }
+
+  .tab__title__desktop {
+    font-size: 14px !important;
+  }
+
+  .nav-item i {
+    font-size: 14px !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1658,11 +1807,78 @@ hr {
   .popup-gallery.columns-4 .project-info {
     width: 50%;
   }
+
+  .logo {
+    margin-top: 20px;
+  }
+  .logo_custom {
+    height: 40px;
+  }
+
+  .home_content_title {
+    display: block;
+    color: #fcbe1b;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .home_content_title_2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    line-height: 1;
+  }
+
+  .home_btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 599px) {
   .popup-gallery.columns-3 .project-info,
   .popup-gallery.columns-4 .project-info {
     width: 100%;
+  }
+  .home__container {
+    height: 60vh;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mid__banner h4 {
+    font-size: 14px;
+  }
+
+  .contactanos__text {
+    text-align: center;
+  }
+  .contactanos__container {
+    display: flex;
+    justify-content: center;
+  }
+  .contactanos_btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 12px;
+    border: 2px solid #ffffff;
+    transition: all ease 200ms;
+    margin: 0 auto;
+  }
+
+  .tab__title__desktop {
+    display: none;
+  }
+
+  .tab__title__mobile {
+    display: block;
+    font-size: 12px !important;
   }
 }
 

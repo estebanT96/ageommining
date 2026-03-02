@@ -53,7 +53,6 @@
 
     <!-- main style -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-
     <link href="css/skins/skin-default.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -69,8 +68,8 @@
     <!--=================================
 header -->
 
-    <header id="header" class="default">
-      <div class="topbar">
+    <header id="header" class="clean">
+      <div class="topbar dark">
         <div class="container">
           <div
             class="d-flex justify-content-between align-items-center flex-wrap"
@@ -144,9 +143,9 @@ header -->
                     <div class="logo">
                       <a href="index.html">
                         <img
-                          style="height: 55px"
+                          class="logo_custom"
                           id="logo_img"
-                          src="images/ageologo.svg"
+                          src="images/ageologo2.svg"
                           alt="logo"
                         />
                       </a>
@@ -156,7 +155,9 @@ header -->
                     </div>
                     <ul class="menu-links mb-0">
                       <li class="active"><a href="index.html"> Inicio </a></li>
-                      <li><a href="about-me.html"> Nosotros </a></li>
+                      <li>
+                        <a href="about-me.html"> Nosotros </a>
+                      </li>
                       <li>
                         <a href="ing-minas.html">
                           Servicios <i class="fa fa-angle-down fa-indicator"></i
@@ -191,182 +192,58 @@ header -->
       </div>
     </header>
 
-    <!--=================================
- header -->
-
-    <!--=================================
- banner -->
-    <style type="text/css">
-      rs-fullwidth-wrap {
-        position: relative;
-        width: 100%;
-        height: auto;
-        display: block;
-        overflow: visible;
-        max-width: none !important;
-      }
-      rs-fw-forcer {
-        display: block;
-        width: 100%;
-        pointer-events: none;
-      }
-    </style>
-    <div class="new-slider-v6">
-      <rs-module-wrap
-        id="rev_slider_2_1_wrapper"
-        data-alias="constro-slider2"
-        data-source="gallery"
+    <section class="home__container">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
         style="
-          visibility: hidden;
-          background: transparent;
-          padding: 0;
-          margin: 0px auto;
-          margin-top: 0;
-          margin-bottom: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0.6;
+          z-index: 1;
         "
       >
-        <rs-module id="rev_slider_2_1" style="" data-version="6.6.13">
-          <rs-slides style="overflow: hidden; position: absolute">
-            <rs-slide
-              style="position: absolute"
-              data-key="rs-4"
-              data-title="Slide"
-              data-thumb="rs6/assets/slide2/d8785-videos-100x50.jpg"
-              data-in="o:0;"
-              data-out="a:false;"
-            >
-              <img
-                src="rs6/assets/slide2/d8785-videos.jpg"
-                alt=""
-                class="rev-slidebg tp-rs-img"
-                data-no-retina
-              />
-              <rs-bgvideo
-                data-video="w:100%;h:100%;nse:false;l:true;ptimer:false;vfc:true;"
-                data-mp4="rs6/assets/slide2/c628d-video.mp4"
-              ></rs-bgvideo>
-              <!--
-                    --><rs-layer
-                id="slider-2-slide-4-layer-0"
-                data-type="shape"
-                data-rsp_ch="on"
-                data-text="w:normal;"
-                data-dim="w:100%;h:100%;"
-                data-frame_999="o:0;st:w;"
-                style="z-index: 6; background-color: rgba(0, 0, 0, 0.5)"
-              >
-              </rs-layer
-              ><!--
+        <source src="rs6/assets/slide2/c628d-video.mp4" type="video/mp4" />
+        Tu navegador no soporta videos.
+      </video>
 
-                    --><rs-layer
-                id="slider-2-slide-4-layer-6"
-                data-type="text"
-                data-color="#fcbe1b"
-                data-rsp_ch="on"
-                data-xy="x:c;y:c;yo:-75px;"
-                data-text="s:28;l:34;fw:900;a:inherit;"
-                data-frame_0="y:50px;"
-                data-frame_1="e:power1.out;st:1230;sp:1000;sR:1230;"
-                data-frame_999="o:0;st:w;sR:6770;"
-                style="z-index: 7; font-family: &quot;Roboto&quot;"
-                >Expertos en Soluciones Mineras </rs-layer
-              ><!--
+      <div
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90%;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <span class="home_content_title"> Expertos en Soluciones Mineras </span>
 
-                    --><rs-layer
-                id="slider-2-slide-4-layer-7"
-                data-type="text"
-                data-color="rgba(255,255,255,1)"
-                data-rsp_ch="on"
-                data-xy="x:c;y:c;yo:-10px;"
-                data-text="s:73;l:73;fw:900;a:inherit;"
-                data-frame_0="y:50px;"
-                data-frame_1="e:power1.out;st:1940;sp:1000;sR:1940;"
-                data-frame_999="o:0;st:w;sR:6060;"
-                style="z-index: 8; font-family: &quot;Roboto&quot;"
-                >A - GEOMMINING </rs-layer
-              ><!--
+        <h1 class="home_content_title_2">A - GEOMMINING</h1>
 
-                    --><rs-layer
-                id="slider-2-slide-4-layer-8"
-                data-type="text"
-                data-color="rgba(255,255,255,1)"
-                data-rsp_ch="on"
-                data-xy="x:c;y:c;yo:90px;"
-                data-text="s:17;l:29;a:center;"
-                data-frame_0="y:50px;"
-                data-frame_1="e:power1.out;st:2650;sp:1000;sR:2650;"
-                data-frame_999="o:0;st:w;sR:5350;"
-                style="z-index: 9; font-family: &quot;Roboto&quot;"
-                >Expertos en transformar la exploración minera mediante la
-                eficiencia y la tecnología de vanguardia. <br />
-                Nuestro equipo técnico especializado garantiza proyectos de alto
-                estándar, enfocados en resultados sostenibles <br />
-                y en crear valor duradero para nuestros socios y comunidades. </rs-layer
-              ><!--
+        <p class="home_content_para">
+          Expertos en transformar la exploración minera mediante la eficiencia y
+          la tecnología de vanguardia. <br />
+          Nuestro equipo técnico especializado garantiza proyectos de alto
+          estándar, enfocados en resultados sostenibles.
+        </p>
 
-                    --><rs-layer
-                id="slider-2-slide-4-layer-9"
-                class="rev-btn button animated middle-fill"
-                data-type="button"
-                data-color="#ffffff"
-                data-rsp_ch="on"
-                data-xy="x:c;xo:-120px;y:c;yo:200px;"
-                data-text="s:17;l:29;fw:500;a:inherit;"
-                data-padding="t:12;r:35;b:12;l:35;"
-                data-border="bos:solid;boc:#fcbe1b;bow:2px,2px,2px,2px;"
-                data-frame_0="x:-50px;"
-                data-frame_1="st:3360;sp:1000;sR:3360;"
-                data-frame_999="o:0;st:w;sR:4640;"
-                data-frame_hover="c:#000000;bgc:#fce497;boc:#fce497;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;oX:50;oY:50;sp:0;e:none;"
-                style="
-                  z-index: 10;
-                  background-color: #fcbe1b;
-                  font-family: &quot;Roboto&quot;;
-                  text-transform: uppercase;
-                  cursor: pointer;
-                  outline: none;
-                  box-shadow: none;
-                  box-sizing: border-box;
-                "
-              >
-                <a href="galería.html" style="text-decoration: none">
-                  <span style="color: rgb(34, 34, 34)">Proyectos</span>
-                </a> </rs-layer
-              ><!--
-
-                    --><rs-layer
-                id="slider-2-slide-4-layer-10"
-                class="rev-btn button animated border transparent middle-fill"
-                data-type="button"
-                data-color="rgba(255,255,255,1)"
-                data-rsp_ch="on"
-                data-xy="x:c;xo:100px;y:c;yo:200px;"
-                data-text="s:17;l:29;fw:500;a:inherit;"
-                data-padding="t:12;r:35;b:12;l:35;"
-                data-border="bos:solid;boc:#ffffff;bow:2px,2px,2px,2px;"
-                data-frame_0="x:50px;"
-                data-frame_1="st:3360;sp:1000;sR:3360;"
-                data-frame_999="o:0;st:w;sR:4640;"
-                data-frame_hover="c:#000;bgc:#fff;boc:#fff;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;oX:50;oY:50;sp:0;e:none;"
-                style="
-                  z-index: 11;
-                  font-family: &quot;Roboto&quot;;
-                  text-transform: uppercase;
-                  cursor: pointer;
-                  outline: none;
-                  box-shadow: none;
-                  box-sizing: border-box;
-                  -moz-box-sizing: border-box;
-                  -webkit-box-sizing: border-box;
-                "
-                ><span>Leer Más</span> </rs-layer
-              ><!--
--->
-            </rs-slide>
-          </rs-slides>
-        </rs-module>
-      </rs-module-wrap>
-    </div>
+        <div
+          style="display: flex; justify-content: center; gap: 20px"
+          class="home_btns"
+        >
+          <a class="home_proyectos_btn" href="proyectos.html"> Proyectos </a>
+          <a class="learn_more_btn animated" href="about-me.html"> Leer Más </a>
+        </div>
+      </div>
+    </section>
 
     <!--=================================
  banner -->
@@ -374,17 +251,18 @@ header -->
     <section class="action-box small yellow-bg">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-md-8 text-start">
-            <h4 class="m-0" style="color: white">
+          <div class="col-md-8 text-start mid__banner">
+            <h4 class="m-0 contactanos__text" style="color: white">
               Líderes en Ingeniería y Operaciones Mineras desde 2012.
             </h4>
           </div>
-          <div class="col-md-4 text-start text-md-end">
+          <div class="col-md-4 text-start text-md-end contactanos__container">
             <a
               href="contact-3.html"
-              class="button border transparent animated middle-fill"
+              class="contactanos_btn"
+              href="about-me.html"
             >
-              <span>CONTÁCTANOS</span>
+              Contáctanos
             </a>
           </div>
         </div>
@@ -518,7 +396,10 @@ header -->
                     data-bs-toggle="tab"
                     aria-expanded="true"
                     ><i class="glyph-icon flaticon-buildings-1"></i
-                    ><span>Ingeniería de Minas</span></a
+                    ><span class="tab__title__desktop"
+                      >Ingeniería de Minas</span
+                    >
+                    <span class="tab__title__mobile">Ing. de Minas</span></a
                   >
                 </li>
                 <li class="nav-item">
@@ -528,25 +409,29 @@ header -->
                     data-bs-toggle="tab"
                     aria-expanded="false"
                     ><i class="glyph-icon flaticon-construction-14"></i
-                    ><span>Geomecánica</span></a
+                    ><span class="tab__title__desktop">Geomecánica</span>
+                    <span class="tab__title__mobile">Geomecánica</span></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#messages3" data-bs-toggle="tab"
                     ><i class="glyph-icon flaticon-people"></i
-                    ><span>Geología</span></a
+                    ><span class="tab__title__desktop">Geología</span>
+                    <span class="tab__title__mobile">Geología</span></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#settings3" data-bs-toggle="tab"
                     ><i class="glyph-icon flaticon-construction-16"></i
-                    ><span>Hidrogeología</span></a
+                    ><span class="tab__title__desktop">Hidrogeología</span>
+                    <span class="tab__title__mobile">Hidrogeología</span></a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#design3" data-bs-toggle="tab"
                     ><i class="glyph-icon flaticon-tool"></i
-                    ><span>Geofísica</span></a
+                    ><span class="tab__title__desktop">Geofísica</span>
+                    <span class="tab__title__mobile">Geofísica</span></a
                   >
                 </li>
               </ul>

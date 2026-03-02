@@ -1351,7 +1351,7 @@ textarea { height: auto !important; }
 /*---------------------------------------------------------------------
   Tab
 -----------------------------------------------------------------------*/
-.tab .nav-tabs{width:18%; float: left; display: flex; border: none; margin-right:4%;}
+.tab .nav-tabs{width:18%; float: left; display: flex; border: none; margin-right:4%; justify-content: center; align-items: center;}
 .tab .nav-tabs li{display: inline-block; width: 100%; padding:0; margin: 0px; text-align: center;}
 .tab .nav-tabs li a{border:1px solid #dddddd; color:#353535; border-bottom:none; background: #fff; padding:15px;  border-radius:0; margin:0px; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; display: block; }
 .tab .nav-tabs li:last-child a{border-bottom:1px solid #dddddd;}
@@ -1896,7 +1896,7 @@ textarea { height: auto !important; }
 }
 
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
 h1 {font-size: 46px; line-height: 50px;}
 h2 {font-size: 28px; line-height: 36px;}
 h3 {font-size: 25px; line-height: 32px;}
