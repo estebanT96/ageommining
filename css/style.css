@@ -1747,6 +1747,16 @@ hr {
   display: none;
 }
 
+.mobile-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-padding {
+  padding-bottom: 10px;
+}
+
 @media screen and (max-width: 1024px) {
   .popup-gallery.columns-3 .project-info,
   .popup-gallery.columns-4 .project-info {
@@ -1839,6 +1849,10 @@ hr {
     justify-content: center;
     align-items: center;
   }
+
+  .tab__title__desktop {
+    display: none;
+  }
 }
 @media screen and (max-width: 599px) {
   .popup-gallery.columns-3 .project-info,
@@ -1872,13 +1886,90 @@ hr {
     margin: 0 auto;
   }
 
-  .tab__title__desktop {
-    display: none;
-  }
-
   .tab__title__mobile {
     display: block;
     font-size: 12px !important;
+  }
+
+  .home_content_title_2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    line-height: 1;
+  }
+
+  .home_proyectos_btn {
+    background: #fcbe1b;
+    color: black;
+    padding: 8px 25px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 2px solid #fcbe1b;
+    transition: all ease 200ms;
+  }
+
+  .learn_more_btn {
+    background: transparent;
+    color: #fff;
+    padding: 8px 25px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 2px solid #ffffff;
+    transition: all ease 200ms;
+  }
+
+  .service-img-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .service-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transform: translateY(-30%);
+  }
+
+  .service-img-geologia {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transform: translateY(-5%);
+  }
+
+  .service-img-hidro {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transform: translateY(-30%);
+  }
+
+  .footer-nosotros {
+    text-align: center;
+  }
+
+  .footer-nosotros-para {
+    text-align: center;
+  }
+
+  ul.list-mark {
+    padding-left: 100px;
+  }
+
+  .social-icons ul {
+    padding-left: 60px;
+  }
+
+  #back-to-top .top {
+    display: none;
   }
 }
 

@@ -1432,7 +1432,6 @@ textarea { height: auto !important; }
 .tab.tab-light .nav-tabs li:last-child{margin-right:0px;}
 .tab.tab-light .nav-tabs li.active{border-bottom:none; background:none;}
 .tab.tab-light .nav-tabs li a{border:none; display:block;  background:#fcfcf9; padding:18px 25px; color:#656565; position:relative;}
-.tab.tab-light .nav-tabs li a i{display:none;}
 .tab.tab-light .nav-tabs li a span{text-align:left; vertical-align:middle;}
 .tab.tab-light .nav-tabs li a.active {color:#0016b9; background: transparent;}
 .tab.tab-light .nav-tabs li a:before{content:""; width:0; height:3px; margin:0; background:#0016b9; position:absolute; left:50%; top:-1px; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
@@ -1860,7 +1859,7 @@ textarea { height: auto !important; }
 .tab .nav-tabs li a span{font-size:15px;}
 
 .tab.tab-bor .nav-tabs li a{padding:20px 10px;}
-.tab.tab-bor .nav-tabs li a i{display:none;}
+
 .tab.tab-light .nav-tabs li a{padding: 18px 15px;}
 .tab.tab-vertical .nav-tabs li a{padding:10px 10px 10px 25px;}
 .tab.tab-vertical .nav-tabs li a i{display:none;}
