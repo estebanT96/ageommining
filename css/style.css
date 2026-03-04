@@ -1884,10 +1884,6 @@ hr {
     width: 100%;
   }
 
-  .mobile_nav_height {
-    height: 60px;
-  }
-
   .logo_custom {
     height: 40px;
   }
@@ -2040,6 +2036,9 @@ hr {
 }
 
 @media screen and (max-width: 430px) {
+  .mobile-nav-height {
+    height: 60px;
+  }
   .social-icons ul {
     padding-left: 120px;
   }
