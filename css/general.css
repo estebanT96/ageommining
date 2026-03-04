@@ -664,7 +664,7 @@ button:focus{outline:0;}
 .button.yellow-dark{background-color:#f59017; border-color:#f59017; color:#fff;}
 
 /* Border Button */
-.button.border{color:#ffffff; font-weight:600; border:2px solid black !important;}
+.button.border{color:#ffffff; font-weight:600;}
 .button.border.button-3d{-webkit-box-shadow:0 -3px rgba(255, 255, 255, 0.5) inset; -moz-box-shadow:0 -3px rgba(0, 0, 0, 0.5) inset; box-shadow:0 -3px rgba(0, 0, 0, 0.5) inset;}
 
 /* Color Buttons */
@@ -844,9 +844,20 @@ ul.list li a:hover{color:#0016b9;}
 ul.list li .fa{margin-right:5px;}
 
 /* Ul List Mark */
-ul.list-mark{padding-left:90px; margin:0;}
+ul.list-mark{padding-left:60px; margin:0;}
 ul.list-mark li{list-style-type:none; padding-left:25px; position:relative;}
 ul.list-mark li:after{content:"\f00c";}
+
+.service-list-mark {
+ padding-left:20px; margin:0;
+}
+
+.service-list-mark li {
+ list-style-type:none; padding-left:25px; position:relative;
+}
+
+/* 2. Style the checkmark icon */
+.service-list-mark li:after{content:"\f00c";}
 
 /* Ul List Arrow */
 ul.list-arrow{padding:0; margin:0;}
@@ -1911,7 +1922,7 @@ h5.title2 {font-size: 26px; line-height: 32px;}
 h6.title2 {font-size: 22px; line-height: 30px;}
 
 /* Page section margin padding */
-.page-section-ptb{padding:40px 0;} .page-section-pt{padding: 40px 0 0;} .page-section-pb{padding: 0 0 40px;}
+.page-section-ptb{padding:20px 0;} .page-section-pt{padding: 40px 0 0;} .page-section-pb{padding: 0 0 40px;}
 
 /*social-icons*/
 .social-icons li{ margin: 0 3px 3px 0; }
