@@ -1188,11 +1188,8 @@ ul.footer-instagram-images li {
 .top-info.fill {
   position: relative;
   z-index: 9;
-  background: #0016b9;
   padding: 40px 20px;
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+
 }
 .top-info .address-block {
   width: 23%;
@@ -1207,7 +1204,7 @@ ul.footer-instagram-images li {
 }
 .top-info.fill .address-block span,
 .top-info.fill .address-block a {
-  color: #353535;
+  color: #ffffff;
   font-size: 13px;
 }
 
