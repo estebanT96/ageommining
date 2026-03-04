@@ -1850,6 +1850,13 @@ hr {
     line-height: 1;
   }
 
+  .mega-menu .menu-links {
+    left: 0;
+    position: absolute;
+    top: 120%;
+    width: 100%;
+  }
+
   .contactanos_btn {
     padding: 10px 30px;
     font-size: 12px;
@@ -1877,8 +1884,12 @@ hr {
     width: 100%;
   }
 
+  .mobile_nav_height {
+    height: 60px;
+  }
+
   .logo_custom {
-    height: 30px;
+    height: 40px;
   }
   .home__container {
     height: 60vh;
@@ -1887,7 +1898,7 @@ hr {
   }
 
   .home_content_para {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .action-box.small {
@@ -1895,7 +1906,7 @@ hr {
   }
 
   .home_content_title {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .mid__banner h4 {
@@ -1904,6 +1915,7 @@ hr {
 
   .contactanos__text {
     text-align: center;
+    font-size: 18px !important;
   }
   .contactanos__container {
     display: flex;
@@ -2038,14 +2050,28 @@ hr {
 }
 
 @media screen and (max-width: 380px) {
+  .mid__banner h4 {
+    font-size: 14px !important;
+  }
+
   .footer-logo {
     padding-left: 50px;
   }
+
   ul.list-mark {
     padding-left: 120px;
   }
+
   .social-icons ul {
     padding-left: 95px;
+  }
+
+  .home_content_title {
+    font-size: 18px;
+  }
+
+  .home_content_para {
+    font-size: 16px;
   }
 }
 
@@ -2376,7 +2402,7 @@ hr {
   .mega-menu .menu-links {
     left: 0;
     position: absolute;
-    top: 100%;
+    top: 120%;
     width: 100%;
   }
 

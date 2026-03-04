@@ -234,6 +234,7 @@ Page section margin padding
 .dark-bg{background:#151515;}
 .gray-bg, .grey-bg{background:#f8f8f8;}
 .blue-bg{background:#0016b9;}
+
 .yellow-bg{background:#0016b9;}
 
 .no-gutter > [class*='col-'] { padding-right:0; padding-left:0; }
