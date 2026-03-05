@@ -1642,6 +1642,29 @@ hr {
   margin: 0 -7px;
 }
 
+.event-top-bar {
+  background: #fcbe1b !important;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.event-top-bar:hover {
+  text-decoration: underline;
+}
+
+.event-title:hover {
+  text-decoration: underline;
+  color: #fcbe1b;
+}
+
+.event-img {
+  transition: all ease 300ms;
+}
+
+.event-img:hover {
+  transform: scale(1.01);
+}
+
 .home__container {
   position: relative;
   width: 100%;
