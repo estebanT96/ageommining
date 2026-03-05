@@ -862,7 +862,7 @@ ul.page-breadcrumb li a:hover {
   Footer
 ---------------------------------------------------------------------*/
 .footer {
-  background: url(../images/pattern/pattern2.jpg) no-repeat 0 0;
+  background: url(../images/pattern/pattern2.jpg) repeat 0 0;
   color: #c5c5c5;
 }
 .footer .title {
@@ -1771,6 +1771,10 @@ hr {
   gap: 20px;
 }
 
+ .promo-media {
+    height: 485px;
+  }
+
 @media screen and (max-width: 1024px) {
   .popup-gallery.columns-3 .project-info,
   .popup-gallery.columns-4 .project-info {
@@ -1825,6 +1829,10 @@ hr {
 
   .nav-item i {
     font-size: 14px !important;
+  }
+
+  .promo-media {
+    height: 393px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1898,6 +1906,10 @@ hr {
 
   .footer-nosotros-para {
     text-align: center;
+  }
+
+  .promo-media-top-margin {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 599px) {
