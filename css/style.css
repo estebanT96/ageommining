@@ -1652,8 +1652,10 @@ hr {
   text-decoration: underline;
 }
 
+.event-title {
+  transition: all ease 100ms;
+}
 .event-title:hover {
-  text-decoration: underline;
   color: #fcbe1b;
 }
 
@@ -1771,9 +1773,9 @@ hr {
   gap: 20px;
 }
 
- .promo-media {
-    height: 485px;
-  }
+.promo-media {
+  height: 485px;
+}
 
 @media screen and (max-width: 1024px) {
   .popup-gallery.columns-3 .project-info,
