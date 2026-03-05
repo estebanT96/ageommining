@@ -211,7 +211,7 @@ header -->
     <section
       class="inner-intro bg bg-fixed bg-overlay-black-70"
       style="
-        background-image: url(images/about/banner.svg);
+        background-image: url(images/news-banner.svg);
         background-position: center 60%;
       "
     >
@@ -254,24 +254,143 @@ header -->
           </a>
           <h5 class="text-center mb-2">21-22 de Marzo de 2026.</h5>
           <div class="col-sm-6 col-lg-4">
-            <a href="https://www.spiritsofmexicofestival.com/">
+            <div
+              style="cursor: pointer"
+              onclick="
+                document.getElementById('event-modal').style.display = 'flex'
+              "
+            >
               <img
                 src="images/FLYER FEED 1_.webp"
                 class="event-img"
-                alt=""
-                style="width: 100%"
+                alt="Evento A-GEOMMINING"
+                style="width: 100%; border-radius: 4px; display: block"
               />
-            </a>
+            </div>
+
+            <div
+              id="event-modal"
+              style="
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+              "
+            >
+              <button
+                onclick="
+                  document.getElementById('event-modal').style.display = 'none'
+                "
+                style="
+                  position: absolute;
+                  top: 20px;
+                  right: 20px;
+                  background-color: #f39c12;
+                  color: white;
+                  border: none;
+                  border-radius: 50%;
+                  width: 45px;
+                  height: 45px;
+                  font-size: 24px;
+                  font-weight: bold;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                "
+              >
+                &times;
+              </button>
+
+              <img
+                src="images/FLYER FEED 1_.webp"
+                style="
+                  max-width: 90%;
+                  max-height: 90%;
+                  border-radius: 4px;
+                  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+                "
+                alt="Vista ampliada del evento"
+              />
+            </div>
           </div>
+
           <div class="col-sm-6 col-lg-4">
-            <a href="https://www.spiritsofmexicofestival.com/">
+            <div
+              style="cursor: pointer"
+              onclick="
+                document.getElementById('event-modal').style.display = 'flex'
+              "
+            >
               <img
                 src="images/FLYER FEED 2.webp"
                 class="event-img"
-                alt=""
-                style="width: 100%"
+                alt="Evento A-GEOMMINING"
+                style="width: 100%; border-radius: 4px; display: block"
               />
-            </a>
+            </div>
+
+            <div
+              id="event-modal"
+              style="
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+              "
+            >
+              <button
+                onclick="
+                  document.getElementById('event-modal').style.display = 'none'
+                "
+                style="
+                  position: absolute;
+                  top: 20px;
+                  right: 20px;
+                  background-color: #f39c12;
+                  color: white;
+                  border: none;
+                  border-radius: 50%;
+                  width: 45px;
+                  height: 45px;
+                  font-size: 24px;
+                  font-weight: bold;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                "
+              >
+                &times;
+              </button>
+
+              <img
+                src="images/FLYER FEED 2.webp"
+                style="
+                  max-width: 90%;
+                  max-height: 90%;
+                  border-radius: 4px;
+                  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+                "
+                alt="Vista ampliada del evento"
+              />
+            </div>
           </div>
           <div class="col-sm-6 col-lg-4 promo-media promo-media-top-margin">
             <video
