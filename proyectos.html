@@ -1051,7 +1051,16 @@ footer -->
 
     <script>
       // 1. Inicialización
-      var map = L.map("map").setView([24.0, -102.0], 3);
+      var map = L.map("map", {
+        zoomControl: false,
+      }).setView([24.0, -102.0], 3);
+
+      // 1.5 Añadimos el control de zoom en una posición que no estorbe (ej: abajo a la derecha)
+      L.control
+        .zoom({
+          position: "bottomright", // Esto lo mueve lejos de tu menú móvil
+        })
+        .addTo(map);
 
       // 2. Tile Layer
       L.tileLayer(
