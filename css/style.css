@@ -2082,6 +2082,10 @@ hr {
   form .form-group .form-control {
     height: 30px;
   }
+  .footer_legal {
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
 
 @media screen and (max-width: 380px) {
