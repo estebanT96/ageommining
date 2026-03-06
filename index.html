@@ -207,6 +207,7 @@ header -->
 
     <section class="home__container">
       <video
+        id="bg-video"
         autoplay
         muted
         loop
@@ -1633,6 +1634,16 @@ Back to Top -->
       if (window.RS_MODULES.checkMinimal !== undefined) {
         window.RS_MODULES.checkMinimal();
       }
+    </script>
+    <script>
+      // Select the video
+      const video = document.getElementById("bg-video");
+
+      // Set the playback rate
+      // 1.0 is normal speed
+      // 0.5 is half speed (slow motion)
+      // 0.75 is a nice, subtle slow down
+      video.playbackRate = 0.95;
     </script>
   </body>
 </html>
