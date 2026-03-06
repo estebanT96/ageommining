@@ -845,7 +845,7 @@ ul.list li a:hover{color:#0016b9;}
 ul.list li .fa{margin-right:5px;}
 
 /* Ul List Mark */
-ul.list-mark{padding-left:60px; margin:0;}
+ul.list-mark{padding-left:70px; margin:0;}
 ul.list-mark li{list-style-type:none; padding-left:25px; position:relative;}
 ul.list-mark li:after{content:"\f00c";}
 
