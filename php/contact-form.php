@@ -5,8 +5,8 @@ if (isset($_POST["action"])) {
   $email   = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
   $phone   = strip_tags(trim($_POST['phone']));
   $message = strip_tags(trim($_POST['message']));
-  
-  $to      = 'ageommining2@gmail.com'; 
+
+  $to      = 'contacto@ageommining.com';
   $subject = 'Nuevo Mensaje de Contacto - Ageommining';
 
   // 2. Build the Email Body (Removed $website to avoid errors)
@@ -45,7 +45,6 @@ if (isset($_POST["action"])) {
   } else {
     $result = '<div class="alert alert-danger">' . $errmsg . '</div>';
   }
-  
+
   echo $result;
 }
-?>

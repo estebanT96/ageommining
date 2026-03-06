@@ -214,13 +214,15 @@ header -->
               </div>
             </div>
             <div class="col-sm-12">
-              <ul class="page-breadcrumb" ">
-                <li style="color:black">
-                  <a href="index.html" style="color:black"><i class="fa fa-home"></i> Inicio</a>
+              <ul class="page-breadcrumb">
+                <li style="color: black">
+                  <a href="index.html" style="color: black"
+                    ><i class="fa fa-home"></i> Inicio</a
+                  >
                   <i class="fa fa-angle-double-right"></i>
                 </li>
-                <li style="color:black">
-                  <a href="contact-3.html" style="color:black">Contacto</a>
+                <li style="color: black">
+                  <a href="contact-3.html" style="color: black">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -304,6 +306,20 @@ header -->
               <div id="formmessage" style="display: none">
                 Success/Error Message Goes Here
               </div>
+              <p style="text-align: justify">
+                Para consultas sobre nuestros servicios de ingeniería o
+                solicitudes de propuestas técnicas, favor de completar el
+                siguiente formulario.
+                <li
+                  style="
+                    list-style: none;
+                    color: rgb(252, 190, 27);
+                    font-weight: 600;
+                  "
+                >
+                  Todos los campos son obligatorios.
+                </li>
+              </p>
               <form
                 id="contactform"
                 class="form input3-col"
@@ -312,7 +328,7 @@ header -->
                 action="php/contact-form.php"
               >
                 <div class="form-group mb-3 half-group">
-                  <label class="form-label" for="name">Nombre*</label>
+                  <label class="form-label" for="name">Nombre</label>
                   <div class="input-group">
                     <input
                       type="text"
@@ -324,7 +340,7 @@ header -->
                   </div>
                 </div>
                 <div class="form-group mb-3 half-group">
-                  <label class="form-label" for="email">Email*</label>
+                  <label class="form-label" for="email">Email</label>
                   <div class="input-group">
                     <input
                       type="email"
@@ -336,10 +352,10 @@ header -->
                   </div>
                 </div>
                 <div class="form-group mb-3 half-group">
-                  <label class="form-label" for="phone">Teléfono*</label>
+                  <label class="form-label" for="phone">Teléfono</label>
                   <div class="input-group">
                     <input
-                      type="text"
+                      type="number"
                       name="phone"
                       class="form-control"
                       id="phone"
@@ -348,7 +364,7 @@ header -->
                   </div>
                 </div>
                 <div class="form-group mb-3">
-                  <label class="form-label">Mensaje*</label>
+                  <label class="form-label">Mensaje</label>
                   <div class="input-group">
                     <textarea
                       class="form-control input-message"
@@ -395,7 +411,7 @@ header -->
 
     <!--=================================
 footer -->
-  <footer class="footer dark-bg page-section-pt pb-0">
+    <footer class="footer dark-bg page-section-pt pb-0">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
@@ -551,5 +567,41 @@ footer -->
 
     <!-- custom -->
     <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+      const form = document.getElementById("contactform");
+      const submitBtn = document.getElementById("submit");
+      const inputs = form.querySelectorAll(
+        'input[type="text"], input[type="email"], textarea',
+      );
+
+      // Desactivar el botón al inicio
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = "0.5";
+      submitBtn.style.cursor = "not-allowed";
+
+      function checkInputs() {
+        let allFilled = true;
+        inputs.forEach((input) => {
+          if (input.value.trim() === "") {
+            allFilled = false;
+          }
+        });
+
+        if (allFilled) {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = "1";
+          submitBtn.style.cursor = "pointer";
+        } else {
+          submitBtn.disabled = true;
+          submitBtn.style.opacity = "0.5";
+          submitBtn.style.cursor = "not-allowed";
+        }
+      }
+
+      // Escuchar cambios en cada campo
+      inputs.forEach((input) => {
+        input.addEventListener("input", checkInputs);
+      });
+    </script>
   </body>
 </html>
