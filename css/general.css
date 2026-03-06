@@ -1145,7 +1145,7 @@ form .form-group textarea { resize: vertical; }
 textarea { height: auto !important; }
 
 .defoult-form.contact-2.form-2 form .half-group{  width: 50%; margin-right: 0%; }
-.defoult-form.contact-3.light-form form .half-group{  width: 50%; margin-right: 0%; }
+.defoult-form.contact-us.light-form form .half-group{  width: 50%; margin-right: 0%; }
 
 /* Border Form */
 .defoult-form.border .form-group .form-control{background:none; border:1px solid #dddddd;}

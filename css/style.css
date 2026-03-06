@@ -1259,7 +1259,7 @@ ul.footer-instagram-images li {
 /*--------------------------------------------------------------------
   About Me Pages
 ---------------------------------------------------------------------*/
-.section-about-me ul.list li {
+.section-about-us ul.list li {
   margin: 0;
 }
 
@@ -2587,7 +2587,7 @@ Comming soon Page
     line-height: 30px;
   }
   .defoult-form.contact-2.form-2 form .half-group,
-  .defoult-form.contact-3.light-form form .half-group {
+  .defoult-form.contact-us.light-form form .half-group {
     width: 100%;
   }
 
