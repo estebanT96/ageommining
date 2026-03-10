@@ -67,15 +67,14 @@
 
     <div id="preloader">
       <div class="clear-loading loading-effect">
-        <span><img width="400" src="images/ageologo.svg" alt="bw-logo" /></span>
+        <span
+          ><img width="400" src="../images/ageologo.svg" alt="bw-logo"
+        /></span>
       </div>
     </div>
-
-    <!--=================================
- preloader -->
-
     <!--=================================
 header -->
+
     <header id="header" class="clean">
       <div class="topbar event-top-bar text-center">
         <a
@@ -165,7 +164,7 @@ header -->
                         <img
                           class="logo_custom"
                           id="logo_img"
-                          src="images/ageologo2.svg"
+                          src="../images/ageologo2.svg"
                           alt="logo"
                         />
                       </a>
@@ -178,7 +177,7 @@ header -->
                       <li>
                         <a href="about-us.html"> Nosotros </a>
                       </li>
-                      <li class="active">
+                      <li>
                         <a href="ing-minas.html">
                           Servicios <i class="fa fa-angle-down fa-indicator"></i
                         ></a>
@@ -201,7 +200,7 @@ header -->
                       <li><a href="proyectos.html">Proyectos</a></li>
                       <li><a href="galería.html">Galería</a></li>
                       <li><a href="contact-us.html"> Contacto</a></li>
-                      <li><a href="news.html"> Noticias </a></li>
+                      <li class="active"><a href="news.html"> Noticias </a></li>
                     </ul>
                   </div>
                 </div>
@@ -220,14 +219,17 @@ header -->
  banner -->
 
     <section
-      class="inner-intro bg bg-fixed bg-overlay-black-60"
-      style="background-image: url(images/geophy_banner.svg)"
+      class="inner-intro bg bg-fixed bg-overlay-black-70"
+      style="
+        background-image: url(../images/news-banner.svg);
+        background-position: center 60%;
+      "
     >
       <div class="container">
         <div class="row intro-title text-center">
           <div class="col-sm-12">
             <div class="section-title">
-              <h1 class="title text-white">Geofísica</h1>
+              <h1 class="title text-white">Noticias</h1>
             </div>
           </div>
           <div class="col-sm-12">
@@ -237,7 +239,7 @@ header -->
                 <i class="fa fa-angle-double-right"></i>
               </li>
               <li>
-                <a href="geofisica.html">Geofísica</a>
+                <a href="news.html">Noticias</a>
               </li>
             </ul>
           </div>
@@ -249,150 +251,181 @@ header -->
  banner -->
 
     <!--=================================
- service -->
+ Page Section -->
 
-    <section class="service white-bg page-section-ptb">
+    <section class="page-section-ptb">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="sidebar">
-              <div class="service-nav">
-                <ul>
-                  <li><a href="ing-minas.html">Ingeniería de Minas</a></li>
-                  <li><a href="geomecanica.html">Geomecánica</a></li>
-                  <li>
-                    <a href="geologia.html">Geología</a>
-                  </li>
-                  <li><a href="hidrogeologia.html">Hidrogeología</a></li>
-                  <li><a class="active" href="geofisica.html">Geofísica</a></li>
-                </ul>
-              </div>
-              <div class="service-banner">
-                <img class="img-fluid" src="images/banner.jpg" alt="" />
-              </div>
+        <div class="row d-flex justify-content-center">
+          <h2 class="title text-center mb-4">Eventos</h2>
+          <a
+            href="https://www.spiritsofmexicofestival.com/"
+            class="d-flex justify-content-center align-items-center"
+          >
+            <h5 class="text-center event-title" style="margin-right: 5px">
+              Spirits of México Festival Featuring Sonora
+            </h5>
+            <i class="fa fa-external-link" style="font-size: 14px"></i>
+          </a>
+          <h5 class="text-center mb-2">21-22 de Marzo de 2026.</h5>
+          <div class="col-sm-6 col-lg-4">
+            <div
+              style="cursor: pointer; margin: 10px 0"
+              onclick="
+                document.getElementById('event-modal').style.display = 'flex'
+              "
+            >
+              <img
+                src="../images/FLYER FEED 1_.webp"
+                class="event-img"
+                alt="Evento A-GEOMMINING"
+                style="width: 100%; border-radius: 4px; display: block"
+              />
+            </div>
+
+            <div
+              id="event-modal"
+              style="
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+              "
+            >
+              <button
+                onclick="
+                  document.getElementById('event-modal').style.display = 'none'
+                "
+                style="
+                  position: absolute;
+                  top: 20px;
+                  right: 20px;
+                  background-color: #f39c12;
+                  color: white;
+                  border: none;
+                  border-radius: 50%;
+                  width: 45px;
+                  height: 45px;
+                  font-size: 24px;
+                  font-weight: bold;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                "
+              >
+                &times;
+              </button>
+
+              <img
+                src="../images/FLYER FEED 1_.webp"
+                style="
+                  max-width: 90%;
+                  max-height: 90%;
+                  border-radius: 4px;
+                  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+                "
+                alt="Vista ampliada del evento"
+              />
             </div>
           </div>
-          <div class="col-lg-9">
-            <div class="service-block">
-              <div class="row">
-                <div class="col-lg-12 col-md-12">
-                  <h4 class="mb-20">Geofísica</h4>
-                  <p class="mb-30">
-                    Prospección no invasiva y caracterización técnica avanzada
-                    del subsuelo.
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <p style="text-align: justify">
-                    Nuestra metodología se basa en la interpretación rigurosa de
-                    datos para mitigar riesgos geotécnicos y estructurales.
-                    Además de la exploración superficial, implementamos
-                    inspecciones técnicas de pozos mediante cámaras de alta
-                    resolución, lo que nos permite verificar la integridad
-                    estructural y el estado de las instalaciones subterráneas
-                    con total claridad.
-                  </p>
-                  <ul class="service-list-mark">
-                    <li>Exploración Hídrica.</li>
-                    <li>Sísmica y Georradar.</li>
-                    <li>Magnetometría.</li>
-                    <li>Modelado Geofísico.</li>
-                  </ul>
-                </div>
-                <div class="col-lg-6 col-md-6 mb-20">
-                  <div style="height: 300px; width: 100%; overflow: hidden">
-                    <img
-                      class="img-fluid"
-                      src="images/geofisica_serv.jpeg"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        object-position: center(90%);
-                      "
-                      alt="Servicios de Geología A-GEOMMINING"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 mt-20">
-                  <p class="mb-20" style="text-align: justify">
-                    Aplicamos métodos geofísicos de vanguardia diseñados para la
-                    exploración y caracterización del terreno sin necesidad de
-                    intervenciones intrusivas. En A - GEOMMINING, combinamos
-                    nuestra experiencia en magnetometría aérea y terrestre con
-                    tecnología de georradar y sísmica de refracción para
-                    proporcionar un diagnóstico preciso de la estructura del
-                    subsuelo, facilitando la localización de recursos hídricos y
-                    optimizando el diseño de infraestructura minera segura.
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6 mt-40">
-                  <h5 class="mb-10">¿Por qué elegirnos?</h5>
-                  <div class="feature-box left_pos small mt-30">
-                    <i class="glyph-icon flaticon-construction-14"></i>
-                    <h3 class="title">Precisión No Invasiva</h3>
-                    <p style="text-align: justify">
-                      Obtenemos información crítica del terreno sin alterar el
-                      entorno, reduciendo costos operativos y tiempos de
-                      ejecución.
-                    </p>
-                  </div>
-                  <div class="feature-box left_pos small mt-30">
-                    <i class="glyph-icon flaticon-trophy"></i>
-                    <h3 class="title">Tecnología de Inspección</h3>
-                    <p style="text-align: justify">
-                      Utilizamos cámaras de alta resolución y sensores de última
-                      generación para garantizar diagnósticos precisos en pozos
-                      y sondeos.
-                    </p>
-                  </div>
-                  <div class="feature-box left_pos small mt-30 mb-0">
-                    <i class="glyph-icon flaticon-drawing-1"></i>
-                    <h3 class="title">Seguridad Estructural</h3>
-                    <p style="text-align: justify">
-                      Nuestra interpretación de datos sísmicos y de georradar es
-                      fundamental para garantizar la estabilidad en la
-                      construcción de infraestructuras críticas.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 mt-40">
-                  <h5>Beneficios del Servicio</h5>
-                  <p class="mb-30" style="text-align: justify">
-                    La integración de estudios geofísicos en su proyecto permite
-                    una comprensión profunda de las condiciones del terreno,
-                    minimizando incertidumbres y optimizando la inversión en
-                    obra civil y exploración. Al proporcionar datos precisos
-                    sobre la composición y estructura del subsuelo, aseguramos
-                    que cada decisión de diseño esté respaldada por evidencia
-                    científica sólida.
-                  </p>
-                  <ul class="service-list-mark">
-                    <li>Identificación de Riesgos Geotécnicos.</li>
-                    <li>Eficiencia en Exploración Hídrica.</li>
-                    <li>Reducción de Costos de Sondeo.</li>
-                    <li>Verificación de Integridad de Pozos.</li>
-                  </ul>
-                </div>
-              </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div
+              style="cursor: pointer; margin: 10px 0"
+              onclick="
+                document.getElementById('event-modal').style.display = 'flex'
+              "
+            >
+              <img
+                src="../images/FLYER FEED 2.webp"
+                class="event-img"
+                alt="Evento A-GEOMMINING"
+                style="width: 100%; border-radius: 4px; display: block"
+              />
             </div>
+
+            <div
+              id="event-modal"
+              style="
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+              "
+            >
+              <button
+                onclick="
+                  document.getElementById('event-modal').style.display = 'none'
+                "
+                style="
+                  position: absolute;
+                  top: 20px;
+                  right: 20px;
+                  background-color: #f39c12;
+                  color: white;
+                  border: none;
+                  border-radius: 50%;
+                  width: 45px;
+                  height: 45px;
+                  font-size: 24px;
+                  font-weight: bold;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                "
+              >
+                &times;
+              </button>
+
+              <img
+                src="../images/FLYER FEED 2.webp"
+                style="
+                  max-width: 90%;
+                  max-height: 90%;
+                  border-radius: 4px;
+                  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+                "
+                alt="Vista ampliada del evento"
+              />
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-lg-4 promo-media promo-media-top-margin"
+            style="margin: 10px 0"
+          >
+            <video
+              width="100%"
+              height="100%"
+              controls
+              poster="../images/spiritsofmexicologo.webp"
+              preload="metadata"
+              class="promo-video-spirits"
+            >
+              <source src="../images/Promo-2026.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de videos.
+            </video>
           </div>
         </div>
       </div>
     </section>
 
-    <!--=================================
- service -->
-
-    <!--=================================
- page-section -->
-    <section class="action-box small yellow-bg"></section>
     <!--=================================
 footer -->
     <footer class="footer dark-bg page-section-pt pb-0">
@@ -407,7 +440,7 @@ footer -->
                 ><img
                   id="logo-footer"
                   class="img-fluid"
-                  src="images/ageologo2.svg"
+                  src="../images/ageologo2.svg"
                   width="230"
                   alt="logo"
               /></span>
@@ -521,6 +554,7 @@ footer -->
         </div>
       </div>
     </footer>
+
     <!--=================================
 footer -->
 
@@ -532,24 +566,33 @@ footer -->
  jquery -->
 
     <!-- jquery  -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
 
     <!-- popper.min -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
 
     <!-- bootstrap -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
-    <!-- mega-menu -->
-    <script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+    <!-- appear -->
+    <script type="text/javascript" src="../js/jquery.appear.js"></script>
+
+    <!-- Menu -->
+    <script type="text/javascript" src="../js/mega-menu/mega_menu.js"></script>
 
     <!-- owl-carousel -->
     <script
       type="text/javascript"
-      src="js/owl-carousel/owl.carousel.min.js"
+      src="../js/owl-carousel/owl.carousel.min.js"
     ></script>
 
+    <!-- counter -->
+    <script type="text/javascript" src="../js/counter/jquery.countTo.js"></script>
+
+    <!-- counter -->
+    <script type="text/javascript" src="../js/jquery.vide.js"></script>
+
     <!-- custom -->
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
   </body>
 </html>
